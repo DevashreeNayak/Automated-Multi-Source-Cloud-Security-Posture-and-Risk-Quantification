@@ -1,0 +1,15 @@
+# never commit secrets
+.env
+*.pem
+*.key
+credentials
+*credentials*.csv
+accessKeys.csv
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+# raw data stays local, only cleaned samples go in data/samples
+data/raw/*
+!data/raw/.gitkeep

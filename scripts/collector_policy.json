@@ -1,0 +1,10 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Effect": "Allow", "Action": ["cloudtrail:LookupEvents","cloudtrail:DescribeTrails","cloudtrail:GetTrailStatus","cloudtrail:GetEventSelectors","cloudtrail:ListTrails"], "Resource": "*"},
+    {"Effect": "Allow", "Action": ["access-analyzer:ListAnalyzers","access-analyzer:GetAnalyzer","access-analyzer:ListFindings","access-analyzer:ListFindingsV2","access-analyzer:GetFinding","access-analyzer:GetFindingV2"], "Resource": "*"},
+    {"Effect": "Allow", "Action": ["securityhub:GetFindings","securityhub:DescribeHub","securityhub:GetEnabledStandards","securityhub:DescribeStandards","securityhub:DescribeStandardsControls"], "Resource": "*"},
+    {"Effect": "Allow", "Action": ["config:Describe*","config:Get*","config:List*"], "Resource": "*"},
+    {"Effect": "Allow", "Action": ["s3:GetObject","s3:ListBucket"], "Resource": ["arn:aws:s3:::cloudposture-trail-logs-*","arn:aws:s3:::cloudposture-trail-logs-*/*"]}
+  ]
+}
